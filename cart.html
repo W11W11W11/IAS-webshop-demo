@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart – Bean & Byte</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ANALYTICS: paste the GA4 and Matomo snippets here (on every page) -->
+</head>
+<body data-page="cart">
+  <div class="demo-banner">Demo shop for a university project – no real orders or payments.</div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">☕ Bean &amp; Byte</a>
+      <nav>
+        <a href="index.html">Shop</a>
+        <a href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1 class="page-title">Your cart</h1>
+    <div id="cart"></div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <h4>☕ Bean &amp; Byte</h4>
+        <small>A fictional shop built for testing web analytics.</small>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form data-newsletter>
+          <input type="email" name="email" placeholder="you@example.com" required aria-label="Email">
+          <button class="btn btn-small" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

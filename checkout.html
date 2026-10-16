@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout – Bean & Byte</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ANALYTICS: paste the GA4 and Matomo snippets here (on every page) -->
+</head>
+<body data-page="checkout">
+  <div class="demo-banner">Demo shop for a university project – no real orders or payments.</div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">☕ Bean &amp; Byte</a>
+      <nav>
+        <a href="index.html">Shop</a>
+        <a href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1 class="page-title">Checkout</h1>
+    <div class="checkout">
+      <form id="checkout-form" class="panel">
+        <h2>Shipping details</h2>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="street">Street and number</label>
+          <input id="street" name="street" required autocomplete="street-address">
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="zip">Postcode</label>
+            <input id="zip" name="zip" required autocomplete="postal-code">
+          </div>
+          <div class="field">
+            <label for="city">City</label>
+            <input id="city" name="city" required autocomplete="address-level2">
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Payment method (demo – nothing is charged)</legend>
+          <label><input type="radio" name="payment" value="invoice" checked> Invoice</label>
+          <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+          <label><input type="radio" name="payment" value="card"> Credit card</label>
+        </fieldset>
+
+        <button class="btn" type="submit">Place order</button>
+        <p class="note">Use made-up data. No information leaves your browser.</p>
+      </form>
+
+      <aside class="panel">
+        <h2>Order summary</h2>
+        <div id="order-summary"></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <h4>☕ Bean &amp; Byte</h4>
+        <small>A fictional shop built for testing web analytics.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
